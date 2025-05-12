@@ -1,0 +1,67 @@
+name: trade_verge
+description: Trade Verge Logistics Platform
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  supabase_flutter: ^2.3.4
+  go_router: ^13.2.0
+  flutter_riverpod: ^2.4.10
+  google_maps_flutter: ^2.5.3
+  mapbox_gl: ^0.14.0
+  geolocator: ^11.0.0
+  intl: ^0.19.0
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  dio: ^5.4.1
+  flutter_svg: ^2.0.10+1
+  url_launcher: ^6.2.5
+  package_info_plus: ^5.0.1
+  flutter_local_notifications: ^16.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  
+  
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash.png
+  android_12:
+    image: assets/images/splash_android12.png
+    color: "#FFFFFF"
