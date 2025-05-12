@@ -1,11 +1,13 @@
 class ApiConstants {
-  static const String supabaseUrl = 'https://lbawrbtggvaqzviufhie.supabase.co';
-  static const String supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxiYXdyYnRnZ3ZhcXp2aXVmaGllIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY5MTI4OTcsImV4cCI6MjA2MjQ4ODg5N30.6NAIhzi-bPGFgmEJ4oSUd553wT73SJD-nkt9-DjU67M';
-  static const String mapboxAccessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+  static String get supabaseUrl => const String.fromEnvironment('SUPABASE_URL');
+  static String get supabaseAnonKey => const String.fromEnvironment('SUPABASE_ANON_KEY');
+  static String get mapboxAccessToken => const String.fromEnvironment('MAPBOX_ACCESS_TOKEN');
+  static String get googleMapsApiKey => const String.fromEnvironment('GOOGLE_MAPS_API_KEY');
+  static String get flutterwavePublicKey => const String.fromEnvironment('FLUTTERWAVE_PUBLIC_KEY');
 
   // API Endpoints
-  static const String baseUrl = '$supabaseUrl/rest/v1';
-  static const String authUrl = '$supabaseUrl/auth/v1';
+  static String get baseUrl => '$supabaseUrl/rest/v1';
+  static String get authUrl => '$supabaseUrl/auth/v1';
 
   // Storage Buckets
   static const String profileImagesBucket = 'profile-images';
